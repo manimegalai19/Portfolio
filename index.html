@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manimegalai's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/22ab4dba17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>M</span>ani<span class="underscore">_</span></div>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <p onclick="closemenu()"> <i style="color: white;" class="fa-sharp fa-solid fa-xmark"></i></p>
+                </ul>
+                <p><i style="color: white;"  class="fa-solid fa-bars" onclick="openmenu()"></i></p>
+            </nav>
+            <div class="headerText">
+                <p>Software Developer</p>
+                <h1>Hello World! I'm <span>Manimegalai</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <img src="images/myPhotolong.JPG" alt="">
+                </div>
+                <div class="column2">
+                    <h1 class="title">About Me</h1>
+                    <p>A Passionate Computer Science Engineering Student With A Focus On Web Development,Machine Learning. I strive to create impactful and innovative solutions. With a solid foundation in MERN stack development, I am eager to apply my technical skills to real-world challenges. As a fresher in the industry, I am committed to continuous learning and growth</p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div style="color: green;" class="tab-content active-tab" id="skills">
+                        <ul style="font-size: 50px;">
+                            <li><i class="fa-brands fa-java"></i><br>Java</li>
+                            <li><i class="fa-solid fa-c"></i><br>C</li>
+                            <li><i class="fa-brands fa-python"></i><br>Python</li>
+                            <li><i class="fa-brands fa-js"></i><br>JavaScript</li>
+                            <li><i class="fa-brands fa-react"></i><br>React js</li>
+                            <li><i class="fa-brands fa-html5"></i><br>HTML5</li>
+                            <li><i class="fa-brands fa-css3-alt"></i><br>CSS3</li>
+                            <li><i class="fa-brands fa-git"></i><br>Git</li>
+                            <li><i class="fa-brands fa-github"></i><br>Github</li>
+                            <li><i class="fa-solid fa-database"></i><br>SQL</li>
+                            <li><i class="fa-brands fa-node-js"></i><br>Node Js</li>
+                            <li><i class="fa-solid fa-server"></i><br>JSON</li>
+                            <li><i class="fa-solid fa-bug"></i><br>Problem-Solving</li>
+                            <li><i>DS &</i><br>Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul s>
+                            <li><span> 2020 - 2024</span>
+                            B.E Computer Science and Engineering
+                            <br>-<i>Government College of Engineering, Salem</i></li>
+                            <li><span>2016 - 2020</span>Mathematics 
+                                <br>-<i>Sakthi Matriculation Higher Secondary School, Kallakurichi</i></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Jan 2024 - Present</span>Software Engineer Intern<br>-<i>GreenECM Technologies, Coimbatore</i> </li>
+                            <li><span>Jun 2023 - Jul 2023</span>BSNL Intern <br>-<i>BSNL, Salem</i> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-head-side-gear"></i>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Proficient in JavaScript, Flask, React.js, and Node.js. Hands-on experience with SQL databases. Eager to contribute skills to exciting web projects for continuous growth.</p>
+                </div>
+                <div>
+                    <img src="images/mlImage.jpg" alt="">
+                    <h3>ML Models</h3>
+                    <p>Passionate about machine learning with a solid foundation in numpy, pandas, scikit-learn, and streamlit.Worked on Capstone Project. Ready to contribute to ML projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/Complaint-photo.png" alt="" class="responsive-image">
+                    <div class="layer">
+                        <h3>Complaint Management System</h3>
+                        <p>A platform for effectively register complaints online, tracking and resolving.Practiced Agile development methodologies to iterate and refine features based on project mentor feedback.</p>
+                        <a href="https://drive.google.com/file/d/1cyCBLnyOHncfp64cICQJyPJBje2Y5iL2/view"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/To-photo.png" alt="" class="responsive-image">
+                    <div class="layer">
+                        <h3>To-Do List</h3>
+                        <p>These Website developed with React which helps you to keeo track of your daily tasks</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/Project-photo.jfif" alt="" class="responsive-image">
+                    <div class="layer">
+                        <h3>Course Recommender</h3>
+                        <p>Personalized course suggestions to users within an online learning-platforms. Aiming to optimize their learning journey and overall experience.</p>
+                        <a href="https://github.com/manimegalai19/recommendsys"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container" >
+            <h1 class="title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><a href="https://github.com/manimegalai19"><i class="fa-brands fa-github"></i>manimegalai19</a></p>
+                    <p><a href="mailto:manimegalaic@gmail.com"><i class="fa-solid fa-envelope"></i>manimegalaic@gmail.com</a></p>
+                    <p><a href="https://www.linkedin.com/in/manimegalaic/"><i class="fa-brands fa-linkedin-in"></i>Manimegalai chellapandiyan</a></p>
+                 <!--<div class="social-icons">
+                        <a href="https://link"><i class="fa-brands fa-linkedin-in"></i></a>
+                 </div> -->
+                <a href="images/mycv.pdf" download class="download-btn">Download my CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="successMsg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p></p>
+        </div>
+    </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-link");
+    var tabcontents=document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(link of tablinks){
+            link.classList.remove("active-link");
+        }
+        for(content of tabcontents){
+            content.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykVdBDaRPdqX4WDpFUq_8TXQi4UYLXNCG6QZLhs_pLNElB315BDgpATwOxQyKN2vXtlQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("successMsg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      msg.innerHTML="Message sent Successfully!!!"
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+       form.reset();
+       msg.innerHTML=""
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
